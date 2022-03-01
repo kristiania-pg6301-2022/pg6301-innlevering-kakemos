@@ -1,3 +1,11 @@
+export function randomQuestion() {
+    return Questions[Math.trunc(Math.random() * Questions.length)];
+}
+
+export function isCorrectAnswer(question, answer) {
+    return question.correct_answers[answer + "_correct"] === "true";
+}
+
 const Questions = [{
     "id": 1036,
     "question": "Which command will you use to check your Ansible version?",
