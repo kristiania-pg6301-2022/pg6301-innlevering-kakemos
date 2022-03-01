@@ -1,4 +1,4 @@
-[{
+const Questions = [{
     "id": 1036,
     "question": "Which command will you use to check your Ansible version?",
     "description": null,
