@@ -21,3 +21,6 @@ Målet med innleveringen er at man skal kjøre en webapplikasjon på skytjeneste
 - [ ] POST /api/question - tar inn { id, answer } og returnerer "true" eller "false"
 
 Dere kan ta utgangspunkt i følgende eksempel på spørsmål, men dere må endre på formatet som returneres til klienten slik at klienten ikke vet hvilket alternativ som er riktig: https://quizapi.io/
+
+//heii
+//hallo
