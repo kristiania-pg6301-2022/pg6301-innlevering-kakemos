@@ -4,7 +4,7 @@
   "description": "Målet med innleveringen er at man skal kjøre en webapplikasjon på skytjenesten Heroku. Applikasjonen skal være en quiz der brukeren får et quiz-spørsmål og skal velge riktig svar.",
   "main": "index.js",
   "scripts": {
-    "dev":"parcel index.html",
+    "dev": "parcel client/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

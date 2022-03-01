@@ -21,3 +21,12 @@ Målet med innleveringen er at man skal kjøre en webapplikasjon på skytjeneste
 - [ ] POST /api/question - tar inn { id, answer } og returnerer "true" eller "false"
 
 Dere kan ta utgangspunkt i følgende eksempel på spørsmål, men dere må endre på formatet som returneres til klienten slik at klienten ikke vet hvilket alternativ som er riktig: https://quizapi.io/
+
+**Steps**
+- [ ] Legge til index.html og index.jsx i client
+- [ ] Oppdatere index.jsx med importeringer og funksjon for å vise spørsmål
+- [ ] Legge til server.js(express med get og post) og questions.js i server
+- [ ] Legge til http.jsx, prettier, shortcuts til client og server, jest, husky og eslint i root.
+- [ ] Koble til heroku
+- [ ] Koble til Github Actions
+- [ ] Koble til Coveralls
