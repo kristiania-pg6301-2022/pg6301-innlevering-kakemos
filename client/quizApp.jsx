@@ -1,8 +1,13 @@
 import React, {useState} from "react";
-import {BrowserRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 
 function FrontPage() {
-    return null;
+    return <div>
+        <h1>TIME FOR QUIZ!</h1>
+        <p></p><Link to={"/question"}>
+        <button>Answer a question!</button>
+    </Link>
+    </div>
 }
 
 function ShowQuestion() {

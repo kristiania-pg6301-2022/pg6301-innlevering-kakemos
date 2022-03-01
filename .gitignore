@@ -2,3 +2,5 @@
 /dist/
 /.parcel-cache/
 /.idea/
+/client/.parcel-cache/
+/client/node_modules/
