@@ -24,3 +24,5 @@ Dere kan ta utgangspunkt i følgende eksempel på spørsmål, men dere må endre
 
 //heii
 //hallo
+
+Tester
