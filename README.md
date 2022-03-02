@@ -25,12 +25,13 @@ Dere kan ta utgangspunkt i følgende eksempel på spørsmål, men dere må endre
 **Steps**
 - [ ] CLIENT: Legge til index.html og index.jsx i client
 - [ ] CLIENT: Legge til alle nødvendige dependencies
-- [ ] CLIENT: Oppdatere index.jsx med importeringer og funksjon for å vise spørsmål
+- [ ] CLIENT: Oppdatere index.jsx med importeringer(react, react-dom, spørsmål etc) og funksjon for å vise spørsmål
 - [ ] SERVER: Legge til server.js(express med get og post) og questions.js i server
-- [ ] SERVER: Legge til alle nødvendige dependencies
+- [ ] SEVRER: Legge til alle nødvendige dependencies
 - [ ] ROOT: Legge til http.jsx, prettier, shortcuts til client og server, jest, husky og eslint i root.
 - [ ] ROOT: Legge til alle nødvendige dependencies
 - [ ] JEST: Skrive tester
 - [ ] Koble til heroku
 - [ ] Koble til Github Actions
 - [ ] Koble til Coveralls
+- [ ] faen
