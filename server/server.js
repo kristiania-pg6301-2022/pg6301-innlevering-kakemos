@@ -1,7 +1,7 @@
 import express from "express";
 import * as path from "path";
 import cookieParser from "cookie-parser";
-import {isCorrectAnswer, randomQuestion} from "./questions.js";
+import {isCorrectAnswer, Questions, randomQuestion} from "./questions.js";
 
 const app = express();
 app.use(cookieParser(process.env.COOKIE_PARSER));

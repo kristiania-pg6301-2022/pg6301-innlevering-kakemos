@@ -6,7 +6,7 @@ export function isCorrectAnswer(question, answer) {
     return question.correct_answers[answer + "_correct"] === "true";
 }
 
-const Questions = [{
+export const Questions = [{
     "id": 1036,
     "question": "Which command will you use to check your Ansible version?",
     "description": null,

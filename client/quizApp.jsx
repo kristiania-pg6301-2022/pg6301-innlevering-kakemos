@@ -23,19 +23,20 @@ export function FrontPage() {
   );
 }
 
-function ShowQuestion() {
-  const navigate = useNavigate();
-  const { randomQuestion } = useContext(QuestionContext);
-  const [question] = useState(randomQuestion());
+function ShowQuestion(question) {
+  //const navigate = useNavigate();
+  //const { randomQuestion } = useContext(QuestionContext);
+  //const [question] = useState(randomQuestion());
 
-  function handleAnswer(answer) {
-    if (isCorrectAnswer(question, answer)) {
-      navigate("/answer/correct");
-      return <ShowAnswer question={question} answer={answer} />;
-    } else {
-      navigate("/answer/wrong");
-      return <ShowAnswer question={question} answer={answer} />;
-    }
+  async function handleAnswer(answer) {
+    const {id} = question;
+    const res = await fetch("/api/question", {
+        method: "post",
+        headers: {
+            "content-type": "application/json",
+        },
+        body: JSON.stringify({id, answer}),
+    });
   }
 
   return (
