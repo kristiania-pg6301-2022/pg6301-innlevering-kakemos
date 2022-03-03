@@ -7,9 +7,9 @@ import {
   useNavigate,
 } from "react-router-dom";
 import { isCorrectAnswer, randomQuestion } from "../server/questions.js";
-import { useContext } from "../dist/index.d240bd5c";
+// import { useContext } from "../dist/index.d240bd5c";
 
-export const QuestionContext = React.createContext({ randomQuestion });
+// export const QuestionContext = React.createContext({ randomQuestion });
 
 export function FrontPage() {
   return (
@@ -25,7 +25,7 @@ export function FrontPage() {
 
 function ShowQuestion() {
   const navigate = useNavigate();
-  const { randomQuestion } = useContext(QuestionContext);
+  // const { randomQuestion } = useContext(QuestionContext);
   const [question] = useState(randomQuestion());
 
   function handleAnswer(answer) {
