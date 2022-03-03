@@ -72,6 +72,26 @@ function ShowQuestion(question) {
   );
 }
 
+function QuestionComponent(){
+    const [question, setQuestion] = useState();
+
+    async function handleLoadQuestion(){
+        const res = await fetch("api/question");
+        setQuestion(await res.json());
+    }
+
+    if(!question){
+        return (
+            <div>
+                <button onClick={handleLoadQuestion}>New Question</button>
+            </div>
+        );
+    }
+
+    return <ShowQuestion question={question} />;
+
+}
+
 function ShowAnswer() {
   return (
     <div>
@@ -104,7 +124,7 @@ export function QuizApp() {
   return (
     <Routes>
       <Route path={"/"} element={<FrontPage />} />
-      <Route path={"/question"} element={<ShowQuestion />} />
+      <Route path={"/question"} element={<QuestionComponent />} />
       <Route path={"/answer/*"} element={<ShowAnswer />} />
       <Route path={"*"} element={<h1>Not found</h1>} />
     </Routes>
