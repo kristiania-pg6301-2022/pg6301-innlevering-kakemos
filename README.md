@@ -1,3 +1,5 @@
+[![Node.js CI](https://github.com/kristiania-pg6301-2022/pg6301-innlevering-kakemos/actions/workflows/node.js.yml/badge.svg)](https://github.com/kristiania-pg6301-2022/pg6301-innlevering-kakemos/actions/workflows/node.js.yml)
+
 Målet med innleveringen er at man skal kjøre en webapplikasjon på skytjenesten Heroku. Applikasjonen skal være en quiz der brukeren får et quiz-spørsmål og skal velge riktig svar.
 
 **Applikasjonen skal vise at dere behersker:**
