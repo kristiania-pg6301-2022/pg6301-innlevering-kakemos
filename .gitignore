@@ -1,5 +1,6 @@
 /.idea/
 /dist/
+/client/dist/
 /.parcel-cache/
 /client/.parcel-cache/
 /node_modules/
