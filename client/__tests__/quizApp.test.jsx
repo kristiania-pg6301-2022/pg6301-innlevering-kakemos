@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { MemoryRouter } from "react-router-dom";
-import { FrontPage } from "../quizApp.jsx";
+import { FrontPage, QuizApp } from "../quizApp.jsx";
 
 // testene vil ikke kjøre, da vi får error vi ikke klarer å løse.
 // Det ble derfor vanskelig å skrive flere tester
@@ -34,7 +34,7 @@ describe("quiz application", () => {
     ReactDOM.render(
       <MemoryRouter initialEntries={["/question"]}>
         <QuestionContext.Provider value={{ randomQuestion: () => question }}>
-          <Application />
+          <QuizApp />
         </QuestionContext.Provider>
       </MemoryRouter>,
       element
