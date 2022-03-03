@@ -12,30 +12,42 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.17.6",
+    "@babel/core": "^7.17.5",
     "@babel/preset-env": "^7.16.11",
     "@babel/preset-react": "^7.16.7",
     "babel-jest": "^27.5.1",
+    "babel-polyfill": "^6.26.0",
     "jest": "^27.5.1",
     "parcel": "^2.3.1"
   },
   "dependencies": {
+    "@babel/preset-react": "^7.16.7",
     "@parcel/transformer-react-refresh-wrap": "^2.3.2",
+    "babel-jest": "^27.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-router-dom": "^6.2.1"
   },
   "jest": {
-    "testEnvironment": "jsdom"
+    "testEnvironment": "jsdom",
+    "collectCoverageFrom": [
+      "*.jsx"
+    ]
   },
   "babel": {
     "presets": [
-        "@babel/preset-react",
+      "@babel/preset-react",
       [
         "@babel/preset-env",
         {
           "targets": {
-            "node": "current"
-          }
+            "edge": "17",
+            "firefox": "60",
+            "chrome": "67",
+            "safari": "11.1"
+          },
+          "corejs": "3.6.5"
         }
       ]
     ]
