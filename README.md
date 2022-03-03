@@ -15,7 +15,7 @@ Målet med innleveringen er at man skal kjøre en webapplikasjon på skytjeneste
 - [x] Få React Router til å navigere rundt i applikasjonen
 - [ ] Få React til å hente og lagre informasjon til et API
 - [ ] Få Github Actions til å kjøre Jest-testene og publisere coverage til Coveralls
-- [ ] Få Heroku til å publisere websidene
+- [x] Få Heroku til å publisere websidene
 - [x] Express-serveren skal ha følgende API:
 - [x] GET /api/question - returnerer et tilfeldig spørsmål med { id, category, question, answers }
 - [x] POST /api/question - tar inn { id, answer } og returnerer "true" eller "false"
