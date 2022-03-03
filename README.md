@@ -23,11 +23,15 @@ Målet med innleveringen er at man skal kjøre en webapplikasjon på skytjeneste
 Dere kan ta utgangspunkt i følgende eksempel på spørsmål, men dere må endre på formatet som returneres til klienten slik at klienten ikke vet hvilket alternativ som er riktig: https://quizapi.io/
 
 **Steps**
-- [ ] CLIENT: Legge til index.html og index.jsx i client
-- [ ] CLIENT: Legge til alle nødvendige dependencies
+- [x] CLIENT: Legge til index.html og index.jsx i client
+- [x] CLIENT: Legge til alle nødvendige dependencies
 - [ ] CLIENT: Oppdatere index.jsx med importeringer(react, react-dom, spørsmål etc) og funksjon for å vise spørsmål
-- [ ] SERVER: Legge til server.js(express med get og post) og questions.js i server
-- [ ] SEVRER: Legge til alle nødvendige dependencies
+  - [ ] Liste spørsmål
+  - [ ] Liste svar
+  - [ ] Lage knapp til å levere svaret
+  - [ ] Knapp til å få nytt spørsmål
+- [x] SERVER: Legge til server.js(express med get og post) og questions.js i server
+- [x] SEVRER: Legge til alle nødvendige dependencies
 - [ ] ROOT: Legge til http.jsx, prettier, shortcuts til client og server, jest, husky og eslint i root.
 - [ ] ROOT: Legge til alle nødvendige dependencies
 - [ ] JEST: Skrive tester
