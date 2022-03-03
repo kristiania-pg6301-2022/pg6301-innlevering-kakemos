@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {BrowserRouter, Link, Route, Routes, useNavigate} from "react-router-dom";
 import {isCorrectAnswer, randomQuestion} from "../server/questions.js";
-import {useContext} from "../dist/index.d240bd5c";
+//import {useContext} from "../dist/index.d240bd5c";
 
 export const QuestionContext = React.createContext({randomQuestion})
 
