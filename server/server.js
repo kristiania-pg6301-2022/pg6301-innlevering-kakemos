@@ -1,16 +1,29 @@
 import express from "express";
 import * as path from "path";
+import cookieParser from "cookie-parser";
+import {isCorrectAnswer, randomQuestion} from "./questions.js";
 
 const app = express();
+app.use(cookieParser(process.env.COOKIE_PARSER));
 
 app.get("/api/question", (req, res) => {
-
+        const { id, category, question, answers } = randomQuestion();
+        res.json({id, category, question, answers});
 });
 
 app.post("/api/question", (req, res) => {
+    const { id, answer } = req.body;
+    const question = Questions.find((q) => q.id === id);
+    if(!question){
+        return res.sendStatus(404);
+    }
 
+    if(isCorrectAnswer(question, answer)){
+        return res.json({result: "true"});
+    }else{
+        return res.json({result: "false"});
+    }
 });
-
 
 app.use(express.static("../client/dist"));
 app.use((req, res, next) =>{
