@@ -42,4 +42,3 @@ Dere kan ta utgangspunkt i følgende eksempel på spørsmål, men dere må endre
 - [x] Koble til heroku
 - [x] Koble til Github Actions
 - [x] Koble til Coveralls
-- [x] faen, legge til node_modules i server, dobbeltsjekk AT DEN GITIGNORERES!
