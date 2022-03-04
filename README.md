@@ -36,7 +36,7 @@ Dere kan ta utgangspunkt i følgende eksempel på spørsmål, men dere må endre
 - [x] SEVRER: Legge til alle nødvendige dependencies
 - [x] ROOT: Legge til http.jsx, prettier, shortcuts til client og server, jest, husky og eslint i root.
 - [x] ROOT: Legge til alle nødvendige dependencies
-- [/] JEST: Skrive tester
+- [ ] JEST: Skrive tester
 - [x] Koble til heroku
 - [x] Koble til Github Actions
 - [x] Koble til Coveralls
