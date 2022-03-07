@@ -1,6 +1,6 @@
 [![Node.js CI](https://github.com/kristiania-pg6301-2022/pg6301-innlevering-kakemos/actions/workflows/node.js.yml/badge.svg)](https://github.com/kristiania-pg6301-2022/pg6301-innlevering-kakemos/actions/workflows/node.js.yml) [![Coverage Status](https://coveralls.io/repos/github/kristiania-pg6301-2022/pg6301-innlevering-kakemos/badge.svg?branch=main)](https://coveralls.io/github/kristiania-pg6301-2022/pg6301-innlevering-kakemos?branch=main)
 
-Link til heroku (som ikke fungerer): https://git.heroku.com/pg6301-mct.git
+Link til heroku: https://pg6301-mct.herokuapp.com/
 
 Målet med innleveringen er at man skal kjøre en webapplikasjon på skytjenesten Heroku. Applikasjonen skal være en quiz der brukeren får et quiz-spørsmål og skal velge riktig svar.
 
